@@ -24,11 +24,13 @@ public class QGHttpRequest {
     public void getMainList(Context context, String strFromDate, String strToDate, String strOrder, QGHttpHandler<String> handler) {
 
         HashMap<String, String> params = new HashMap();
-        params.put("sdate", strFromDate);
-        params.put("edate", strToDate);
-        params.put("order", strOrder);
+//        params.put("sdate", strFromDate);
+//        params.put("edate", strToDate);
+//        params.put("order", strOrder);
 
-        QGClient.getInstance().post(context, CONFIG.mainListUrl, params, handler);
+//        QGClient.getInstance().post(context, CONFIG.strGetMainList, params, handler);
+
+        QGClient.getInstance().get(context, "http://api.hotelnow.co.kr/products/1/999?useloc=N", params, handler);
     }
 
     public void getDetailInfo(Context context, String strHid, String strURL, String pid, String evt, String ecdate, String eedate, QGHttpHandler<String> handler){

@@ -117,13 +117,13 @@ public abstract class QGHttpHandler<T> implements Listener<String>, ErrorListene
         try {
             //DebugUtils.error(responseString);
             JSONObject jsonObject = new JSONObject(responseString);
-            if (jsonObject.has("result") && jsonObject.getString("code").equals("0")) {
+            if (jsonObject.has("result") && jsonObject.getString("result").equals("success")) {
                 Gson gson = new Gson();
                 Type type = getType();
 //                if (jsonObject.has("result")) {
                     Object obj = null;
-                    String content = jsonObject.getString("result");
-//                    String content = responseString;
+//                    String content = jsonObject.getString("data");
+                    String content = responseString;
                     if (type == String.class || type == Object.class) {
                         if (content == null || content.equals("")) {
                             obj = responseString;
@@ -142,7 +142,7 @@ public abstract class QGHttpHandler<T> implements Listener<String>, ErrorListene
 
                 return;
             }
-            if (jsonObject.has("code") && Integer.parseInt(jsonObject.getString("code")) >= 1) {
+            if (jsonObject.has("result") && !jsonObject.getString("result").equals("success")) {
 //            if (jsonObject.has("result") && !jsonObject.getString("result").equals("success")) {
                 onFailure(0, null, jsonObject.getString("result"), null);
             }
