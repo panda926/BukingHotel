@@ -46,7 +46,7 @@ public class QGHttpRequest {
 
         params.put("ids", strHid);
 
-        QGClient.getInstance().post(context, strURL, params, handler);
+        QGClient.getInstance().get(context, strURL, params, handler);
     }
 
     public void getReserveHistory(Context context, String strUerID, QGHttpHandler<String> handler)

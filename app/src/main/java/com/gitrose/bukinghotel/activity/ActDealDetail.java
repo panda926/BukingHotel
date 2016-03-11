@@ -139,8 +139,8 @@ public class ActDealDetail extends BaseFragmentActivity implements FrgRoomTypeDi
     }
 
     private void getDetailInfo() {
-//        String url = "http://api.hotelnow.co.kr/product_detail/" + this.hId;
-        String url = "http://121.78.66.29/bktonight/api/bt_hotel_info.php";
+        String url = "http://api.hotelnow.co.kr/product_detail/" + this.hId;
+//        String url = "http://121.78.66.29/bktonight/api/bt_hotel_info.php";
         QGHttpRequest.getInstance().getDetailInfo(this, this.hId, url, this.pId, this.evt, this.ec_date, this.ee_date, new GetDetailInfoHandler(this));
     }
 
@@ -268,16 +268,16 @@ public class ActDealDetail extends BaseFragmentActivity implements FrgRoomTypeDi
             if (data.length() > 1) {
                 if (ActDealDetail.this.ec_date != null) {
                     if (ActDealDetail.this.ee_date != null) {
-//                        ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId + "?ec_date=" + ActDealDetail.this.ec_date + "&ee_date=" + ActDealDetail.this.ee_date);
-                        ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
+                        ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId + "?ec_date=" + ActDealDetail.this.ec_date + "&ee_date=" + ActDealDetail.this.ee_date);
+//                        ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
                     }
                 }
                 else
-//                ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId);
-                    ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
+                ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId);
+//                    ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
             } else {
-//                ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId + "?pid=" + ActDealDetail.this.pId);
-                ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
+                ActDealDetail.this.webView.loadUrl("http://api.hotelnow.co.kr/product_detail_web/" + ActDealDetail.this.hId + "?pid=" + ActDealDetail.this.pId);
+//                ActDealDetail.this.webView.loadUrl("http://121.78.66.29/bktonight/html_detail_hotel.php?ht_id=" + ActDealDetail.this.hId);
             }
             ActDealDetail.this.showPager();
             reservationBtn.setVisibility(View.VISIBLE);
@@ -292,19 +292,20 @@ public class ActDealDetail extends BaseFragmentActivity implements FrgRoomTypeDi
 //                reservationBtn.setOnClickListener(new C05263());
                 return;
             }
-            if (data.getJSONObject(0).getString("avail_sell_time").toUpperCase().equals("N")) {
-                room_cnt_layout.setVisibility(View.VISIBLE);
-                room_cnt_layout.setBackgroundColor(Color.parseColor("#88000000"));
-                room_cnt.setText(ActDealDetail.this.getString(R.string.wait_message2, new Object[]{CONFIG.open_sell_time}));
-                ActDealDetail.this.txt_realprice.setVisibility(View.GONE);
-                ActDealDetail.this.txt_nowprice.setTextSize(13.0f);
-                ActDealDetail.this.txt_nowprice.setText(ActDealDetail.this.getString(R.string.wait_price_setting));
-                reservationBtn.setBackgroundResource(R.drawable.button_round_reserve_disable);
-                reservationBtn.setText(ActDealDetail.this.getString(R.string.sell_waiting));
-            } else if (total_sold_out == 0 || total_items_quantity == 0) {
-                reservationBtn.setBackgroundResource(R.drawable.button_round_reserve_disable);
-                reservationBtn.setText(ActDealDetail.this.getString(R.string.sell_complete));
-            } else {
+//            if (data.getJSONObject(0).getString("avail_sell_time").toUpperCase().equals("N")) {
+//                room_cnt_layout.setVisibility(View.VISIBLE);
+//                room_cnt_layout.setBackgroundColor(Color.parseColor("#88000000"));
+//                room_cnt.setText(ActDealDetail.this.getString(R.string.wait_message2, new Object[]{CONFIG.open_sell_time}));
+//                ActDealDetail.this.txt_realprice.setVisibility(View.GONE);
+//                ActDealDetail.this.txt_nowprice.setTextSize(13.0f);
+//                ActDealDetail.this.txt_nowprice.setText(ActDealDetail.this.getString(R.string.wait_price_setting));
+//                reservationBtn.setBackgroundResource(R.drawable.button_round_reserve_disable);
+//                reservationBtn.setText(ActDealDetail.this.getString(R.string.sell_waiting));
+//            } else if (total_sold_out == 0 || total_items_quantity == 0) {
+//                reservationBtn.setBackgroundResource(R.drawable.button_round_reserve_disable);
+//                reservationBtn.setText(ActDealDetail.this.getString(R.string.sell_complete));
+//            } else
+            {
                 if (data.length() > 1) {
                     reservationBtn.setText(ActDealDetail.this.getString(R.string.select_roomtype));
                     reservationBtn.setOnClickListener(new RoomTypeCLick(data));
