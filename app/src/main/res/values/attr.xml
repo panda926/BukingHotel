@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColorPrimary" format="color" />
+    <attr name="textColorPrimaryDisableOnly" format="color" />
+    <declare-styleable name="ViewCalender">
+    </declare-styleable>
+</resources>

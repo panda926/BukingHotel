@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:id="@id/home_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg">
+
+        <ImageView
+            android:id="@id/menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:src="@drawable/back_btn"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@id/title_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/title_text_size"
+                android:text="" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/home_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff000000"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="#ff000000">
+
+                    <ImageView
+                        android:id="@id/room_img"
+                        android:layout_width="144.0dip"
+                        android:layout_height="81.0dip"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:paddingLeft="15.0dip">
+
+                    <TextView
+                        android:id="@id/hotel_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@id/room_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text=""
+                        android:textColor="#ffffffff"
+                        android:textSize="13.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2.0dip"
+                            android:paddingLeft="5.0dip"
+                            android:paddingRight="5.0dip"
+                            android:paddingTop="2.0dip"
+                            android:text=""
+                            android:textColor="#ffffffff"
+                            android:textSize="11.0dip"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@id/booking_hide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:background="#ff67307d"
+                            android:paddingBottom="2.0dip"
+                            android:paddingLeft="5.0dip"
+                            android:paddingRight="5.0dip"
+                            android:paddingTop="2.0dip"
+                            android:text="예약내역삭제"
+                            android:textColor="#ffffffff"
+                            android:textSize="11.0dip"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/kimgisa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff444444"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="12.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="김기사로 길안내"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/pay_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/payment_info"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:paddingTop="5.0dip"
+                    android:stretchColumns="\ 1">
+
+                    <TableRow
+                        android:id="@id/pay_card_row"
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="@string/pay_card"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/pay_phone_row"
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="@string/pay_phone"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/pay_ars_row"
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="@string/pay_ars"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_time"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_date"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:id="@id/pay_email_title"
+                            android:gravity="left"
+                            android:text="@string/pay_email"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_email"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/card_row_1"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/approval_number"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_id"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/card_row_2"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:id="@id/pay_card_title"
+                            android:gravity="left"
+                            android:text="@string/card_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_card_name"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/card_row_3"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/installment_period"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_period"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/card_row_4"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/payment_price"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_amount"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/pay_bankbook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/payment_info"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:paddingTop="5.0dip"
+                    android:stretchColumns="\ 1">
+
+                    <TableRow
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="@string/pay_bankbook"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_time"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/bb_pay_date"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/approval_number"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/bb_pay_id"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/bankbook_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/bb_bank_name"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/payment_price"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/bb_pay_amount"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/pay_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/payment_info"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:paddingTop="5.0dip"
+                    android:stretchColumns="\ 1">
+
+                    <TableRow
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/pay_type"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_type_txt"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="@string/pay_account"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/before_acc_01"
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/account_number"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_acc_num"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:lineSpacingExtra="3.0dip"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/before_acc_02"
+                        android:padding="5.0dip"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/deposit_name"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_acc_name"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/price_row"
+                        android:layout_height="fill_parent"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/deposit_price"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_acc_price"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/account_name"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/deposit_person"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_acc_reserv"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/account_period"
+                        android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/deposit_period"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/pay_acc_status"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@id/caution_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/border_booking_caution"
+                    android:gravity="center"
+                    android:padding="10.0dip"
+                    android:text="@string/reservation_info_explain"
+                    android:textColor="#ff777b82"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@id/hotel_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/reservation_info"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:paddingTop="5.0dip"
+                    android:stretchColumns="\ 1">
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/checkin"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/checkin"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/checkout"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/checkout"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/booked_person"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/booking_name"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/contects"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/booking_pnum"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/booking_price"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/booking_price"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/use_reserve_money"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/use_reserve_money"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/coupon_money"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/use_coupon_money"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/total_price"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/total_price"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@id/consecutive"
+                        android:padding="5.0dip"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="연박정보"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <LinearLayout
+                            android:id="@id/sub_bookings"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10.0dip"
+                            android:gravity="right"
+                            android:orientation="vertical" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/hotel_info"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:paddingTop="5.0dip"
+                    android:stretchColumns="\ 1">
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/hotel_name"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/hotel_name_2"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:padding="5.0dip">
+
+                        <TextView
+                            android:gravity="left"
+                            android:text="@string/address"
+                            android:textColor="#ff5c6169"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@id/hotel_addr"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="13.0sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#ffcccccc"
+                android:paddingBottom="1.0dip"
+                android:paddingTop="1.0dip">
+
+                <ImageView
+                    android:id="@id/map_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170.0dip"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/check_area_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="호텔 확인사항"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/confirm_check"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text=""
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/check_area_room"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="룸 확인사항"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/confirm_check_room"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text=""
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/refund_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/refund_policy"
+                    android:textColor="#ff1d2228"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/refund_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/border_booking_table_top"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text=""
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@id/loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

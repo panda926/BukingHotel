@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/coupon_explain"
+            android:textColor="@color/white"
+            android:textSize="15.0dip" />
+
+        <EditText
+            android:id="@id/code"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/border_setting_table"
+            android:hint="쿠폰 코드를 입력해 주세요."
+            android:maxLength="30"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ff5c6169"
+            android:textSize="17.0dip" />
+
+        <Button
+            android:id="@id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/button_round_signin"
+            android:text="적용하기"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/cpn_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@id/listview_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff999999"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="쿠폰명"
+                android:textColor="#ffffffff" />
+
+            <LinearLayout
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="할인금액"
+                android:textColor="#ffffffff" />
+
+            <LinearLayout
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="유효기간"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/listview_header" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@id/loading_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>

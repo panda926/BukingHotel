@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phone_prefix">
+        <item>010</item>
+        <item>011</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+    </string-array>
+    <string-array name="area_select_text">
+        <item>@string/area_select_text_01</item>
+        <item>@string/area_select_text_02</item>
+        <item>@string/area_select_text_03</item>
+        <item>@string/area_select_text_04</item>
+        <item>@string/area_select_text_05</item>
+        <item>@string/area_select_text_06</item>
+        <item>@string/area_select_text_07</item>
+        <item>@string/area_select_text_08</item>
+        <item>@string/area_select_text_09</item>
+        <item>@string/area_select_text_10</item>
+        <item>@string/area_select_text_11</item>
+        <item>@string/area_select_text_12</item>
+        <item>@string/area_select_text_13</item>
+        <item>@string/area_select_text_14</item>
+        <item>@string/area_select_text_15</item>
+    </string-array>
+    <string-array name="area_select_code">
+        <item>all</item>
+        <item>100_seoul</item>
+        <item>210_gyeonggi</item>
+        <item>250_incheon</item>
+        <item>300_busan</item>
+        <item>900_jeju</item>
+        <item>400_gangwon</item>
+        <item>500_daejeon</item>
+        <item>510_chungcheong</item>
+        <item>600_daegu</item>
+        <item>650_youngnam</item>
+        <item>610_ulsan</item>
+        <item>700_gwangju</item>
+        <item>710_honam</item>
+    </string-array>
+    <string-array name="area_seoul_text">
+        <item>서울 전체</item>
+        <item>강남/서초</item>
+        <item>신촌/홍대/마포</item>
+        <item>명동/종로</item>
+        <item>여의도/영등포/구로</item>
+        <item>동대문/왕십리</item>
+        <item>시청/이태원</item>
+        <item>건대/중랑</item>
+        <item>김포공항/화곡</item>
+        <item>송파/강동</item>
+        <item>상암/서대문/은평</item>
+        <item>동작/관악</item>
+        <item>강북/도봉/노원</item>
+    </string-array>
+    <string-array name="area_seoul_code">
+        <item>all</item>
+        <item>gangnam|seocho</item>
+        <item>mapo</item>
+        <item>jung|jongro</item>
+        <item>yeongdeungpo|guro|gumcheon</item>
+        <item>dongdaemoon|seongdong</item>
+        <item>yongsan</item>
+        <item>gwangjin|jungrang</item>
+        <item>gangseo|yangcheon</item>
+        <item>songpa|gangdong</item>
+        <item>seodaemoon|eunpyeong</item>
+        <item>dongjak|gwanak</item>
+        <item>seongbuk|gangbuk|dobong|nowon</item>
+    </string-array>
+    <string-array name="area_busan_text">
+        <item>부산 전체</item>
+        <item>해운대/송정/기장</item>
+        <item>서면/연산/범일</item>
+        <item>부산역/자갈치/남포</item>
+        <item>광안리/경성대</item>
+        <item>동래/온천</item>
+        <item>사상/덕천</item>
+        <item>김해공항/강서</item>
+    </string-array>
+    <string-array name="area_busan_code">
+        <item>all</item>
+        <item>kijang|haeundae</item>
+        <item>dong|yeonje|busanjik</item>
+        <item>seo|jung|yejung</item>
+        <item>nam|suyoung</item>
+        <item>kumjeong|dongrae</item>
+        <item>buk|saha|sasang</item>
+        <item>kangseo</item>
+    </string-array>
+    <string-array name="area_gyeonggi_text">
+        <item>경기 전체</item>
+        <item>수원</item>
+        <item>화성/오산/평택/안성</item>
+        <item>일산/파주/김포</item>
+        <item>안양/군포/의왕/과천</item>
+        <item>성남/용인</item>
+        <item>부천/광명</item>
+        <item>의정부/포천/동두천/연천</item>
+        <item>구리/남양주/가평/양평</item>
+        <item>안산/시흥</item>
+        <item>하남/광주/여주/이천</item>
+    </string-array>
+    <string-array name="area_gyeonggi_code">
+        <item>all</item>
+        <item>suwon</item>
+        <item>hwaseong|osan|pyeongtaek|anseong</item>
+        <item>ilsan|paju|gimpo</item>
+        <item>anyang|gunpo|uiwang|gwacheon</item>
+        <item>seongnam|yongin</item>
+        <item>bucheon|gwangmyeong</item>
+        <item>uijeongbu|pocheon|dongducheon|yeoncheon</item>
+        <item>guri|namyangju|gapyeong|yangpyeong</item>
+        <item>ansan|siheung</item>
+        <item>hanam|gwangju|yeoju|icheon</item>
+    </string-array>
+    <string-array name="area_incheon_text">
+        <item>인천 전체</item>
+        <item>송도/동춘/논현</item>
+        <item>주안/간석/구월</item>
+        <item>인천공항/월미도/강화</item>
+        <item>부평/계양</item>
+    </string-array>
+    <string-array name="area_incheon_code">
+        <item>all</item>
+        <item>songdo|dongchun|nonhyeon</item>
+        <item>juan|ganseok|guwol</item>
+        <item>icnairport|wolmi|ganghwa</item>
+        <item>bupyeong|gyeyang</item>
+    </string-array>
+    <string-array name="category_text">
+        <item>특1급</item>
+        <item>특2급</item>
+        <item>1급</item>
+        <item>2급</item>
+        <item>3급</item>
+        <item>부티크</item>
+        <item>레지던스</item>
+        <item>모텔</item>
+        <item>콘도</item>
+        <item>게스트하우스</item>
+        <item>펜션</item>
+        <item>리조트</item>
+        <item>가족호텔</item>
+        <item>비지니스</item>
+    </string-array>
+    <string-array name="category_code">
+        <item>s1</item>
+        <item>s2</item>
+        <item>r1</item>
+        <item>r2</item>
+        <item>r3</item>
+        <item>boutique</item>
+        <item>residence</item>
+        <item>motel</item>
+        <item>condo</item>
+        <item>guest</item>
+        <item>pension</item>
+        <item>resort</item>
+        <item>family</item>
+        <item>bussiness</item>
+    </string-array>
+</resources>

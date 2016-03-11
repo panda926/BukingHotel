@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@id/home_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg">
+
+        <ImageView
+            android:id="@id/menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:src="@drawable/back_btn"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@id/title_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/title_text_size"
+                android:text="회원가입" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1.0px"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:background="@color/white" />-->
+    <TextView
+        android:id="@id/title_tv_left"
+        android:layout_below="@id/home_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="필수 입력 사항입니다. 모두 입력해주세요."
+        android:textColor="@color/action_bar_bg"
+        android:layout_marginTop="20dip"
+        android:textSize="15.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_tv_left"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <EditText
+            android:id="@id/userid"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/border_setting_table"
+            android:hint="[필수]아이디"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/border_setting_table"
+            android:hint="[필수]이메일"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dip"
+            android:textCursorDrawable="@null"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@id/passwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/border_setting_table"
+            android:hint="@string/password_full_hint"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dip"
+            android:textCursorDrawable="@null"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@id/confpasswd"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/border_setting_table"
+            android:hint="[필수]비밀번호확인"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dip"
+            android:textCursorDrawable="@null"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@id/btn_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/button_round_reserve_red"
+            android:paddingBottom="15.0dip"
+            android:paddingTop="15.0dip"
+            android:text="다 음"
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

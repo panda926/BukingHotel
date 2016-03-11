@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BukingHotel.iml" filepath="$PROJECT_DIR$/BukingHotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-async-http-1.4.8/android-async-http-1.4.8.iml" filepath="$PROJECT_DIR$/android-async-http-1.4.8/android-async-http-1.4.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calligraphy/calligraphy.iml" filepath="$PROJECT_DIR$/calligraphy/calligraphy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpclient-4.5.1/httpclient-4.5.1.iml" filepath="$PROJECT_DIR$/httpclient-4.5.1/httpclient-4.5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpcore-4.4.3/httpcore-4.4.3.iml" filepath="$PROJECT_DIR$/httpcore-4.4.3/httpcore-4.4.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urlimageviewhelper-1.0.4/urlimageviewhelper-1.0.4.iml" filepath="$PROJECT_DIR$/urlimageviewhelper-1.0.4/urlimageviewhelper-1.0.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewPageIndicator/viewPageIndicator.iml" filepath="$PROJECT_DIR$/viewPageIndicator/viewPageIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+    </modules>
+  </component>
+</project>

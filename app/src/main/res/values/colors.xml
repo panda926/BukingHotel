@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_color">#FF6666</color>
+    <color name="common_unselect_color">#ff333333</color>
+    <color name="white">#ffffffff</color>
+    <color name="action_bar_bg">#f2ff04</color>
+    <color name="sub_tab_bar_bg">#f5ed49</color>
+    <color name="text_shadow">#7f000000</color>
+    <color name="black">#000000</color>
+    <color name="myinfo_email">#ffb5aac6</color>
+    <color name="bg_login_top">#f5ed49</color>
+    <color name="myinfo_login_bar">#f2ff04</color>
+    <color name="dh_theme_color">#ffff7a7a</color>
+    <color name="waitfragment_maintext">#ff443d3d</color>
+    <color name="waitfragment_subtext">#ff433d3c</color>
+    <color name="waitfragment_number">#ff252325</color>
+    <color name="vpi_fillcolor">#99000000</color>
+    <color name="vpi_pagecolor">#33000000</color>
+    <color name="hotel_list_background">#ffececec</color>
+    <color name="daytab_text">#ff1c1c1c</color>
+    <color name="tab_underline">#ffd6d6d6</color>
+    <color name="textView_textColor_shadow_soldout">#af000000</color>
+    <color name="color_line">#dcdcdc</color>
+    <color name="color_background">#f1f1f1</color>
+    <color name="color_33">#333333</color>
+    <color name="color_f0">#f0f0f0</color>
+    <color name="color_d1">#d1d1d1</color>
+    <color name="color_orange">#ef9200</color>
+    <color name="color_88">#888888</color>
+    <color name="textView_textColor_disabled">#ffc6c6c6</color>
+    <color name="setting_title_text_color">#ff333333</color>
+    <color name="back_detail">#28272d</color>
+</resources>

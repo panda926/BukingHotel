@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hotel_list_background">
+
+    <View
+        android:id="@id/daysBackgroundView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/textView_textColor_shadow_soldout"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/daysLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="131.0dip"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@id/checkInOutLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.0dip"
+            android:layout_marginRight="13.0dip"
+            android:clickable="true"
+            android:paddingBottom="24.0dip"
+            android:paddingTop="24.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center|right"
+                android:text="@string/frag_hotel_list_check"
+                android:textColor="@color/dh_theme_color"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/checkInOutTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center|left"
+                android:text="@string/frag_hotel_list_checkin"
+                android:textColor="@color/dh_theme_color"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/daysLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkInOutLayout"
+            android:layout_marginLeft="13.0dip"
+            android:layout_marginRight="13.0dip"
+            android:baselineAligned="false"
+            android:visibility="visible">
+
+            <include
+                android:id="@id/item01"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item02"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item03"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item04"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item05"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item06"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item07"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/daysLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkInOutLayout"
+            android:layout_marginLeft="13.0dip"
+            android:layout_marginRight="13.0dip"
+            android:baselineAligned="false"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@id/toTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27.0dip"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text="@string/frag_hotel_days_tab_to"
+                android:textColor="@color/daytab_text"
+                android:textSize="12.0dip" />
+
+            <include
+                android:id="@id/item08"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item09"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item10"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item11"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <include
+                android:id="@id/item12"
+                layout="@layout/view_selectday_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/tab_underline" />
+    </RelativeLayout>
+
+</RelativeLayout>

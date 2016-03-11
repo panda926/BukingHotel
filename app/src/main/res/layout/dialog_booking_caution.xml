@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60.0dip"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/txt_caution" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/caution_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:lineSpacingExtra="5.0dip"
+            android:text="선택하신 상품의 체크인 시간이 3시간 12분 남았습니다. 6월 12일 오후에 투숙하실 상품을 구매하시려면 아래의 안내에 따라 상품을 선택해 주세요.\n\n1. 상품 리스트 상단의 돋보기 아이콘 선택\n2. 투숙할 날짜 선택 후 검색 버튼 선택\n3. 검색 결과에서 원하는 숙소 선택 후 결제\n\n현재 선택하신 상품을 결제하시겠습니까?"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/btn_ok"
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/button_caution"
+                android:gravity="center"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:text="@string/alert_yes"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@id/btn_skip"
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/button_caution"
+                android:gravity="center"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:text="@string/alert_no"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

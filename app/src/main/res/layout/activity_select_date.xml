@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="날짜지정"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@id/dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:text="취소"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/main_YYMM_Tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:background="#A777BE"-->
+        <!--android:text="&#45;&#45;&#45;&#45;월-일" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="#ccc" />-->
+
+    <!--<sun.bob.mcalendarview.views.WeekColumnView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:paddingTop="12dp" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="#ccc" />-->
+
+    <!--<sun.bob.mcalendarview.views.ExpCalendarView-->
+        <!--android:id="@+id/calendar_exp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/main_expandIV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:src="@mipmap/icon_arrow_up" />-->
+
+
+</LinearLayout>

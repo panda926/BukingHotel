@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rl_containr"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/main_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-4.0dip"
+        android:background="#ff000000"
+        android:divider="#00000000"
+        android:dividerHeight="4.0dip"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@id/hotel_header_ll"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <ProgressBar
+        android:id="@id/loading_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@id/hotel_header_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/theme_hot_newest_guide_height"
+        android:background="@color/action_bar_bg"
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+        <TextView
+            android:id="@id/txt_today_hotel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/personal_middle_9_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/theme_header_padding"
+            android:text="@string/today_hotel"
+            android:textColor="@color/person_foot_num_color"
+            android:textSize="@dimen/title_content_text_size" />
+
+        <TextView
+            android:id="@id/txt_tommorrow_hotel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/personal_middle_9_selector"
+            android:gravity="center"
+            android:paddingRight="@dimen/theme_header_padding_right"
+            android:text="@string/tommorrow_hotel"
+            android:textColor="@color/person_foot_num_color"
+            android:textSize="@dimen/title_content_text_size" />
+
+        <TextView
+            android:id="@id/txt_select_date"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/personal_middle_9_selector"
+            android:gravity="center"
+            android:paddingRight="@dimen/theme_header_padding_right"
+            android:text="@string/select_date"
+            android:textColor="@color/person_foot_num_color"
+            android:textSize="@dimen/title_content_text_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

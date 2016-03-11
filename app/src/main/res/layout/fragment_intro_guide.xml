@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_intro_guide"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_bg_guide1"
+    android:orientation="vertical"
+    android:paddingBottom="60.0dip"
+    android:weightSum="3.0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@id/tv_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64.5dip"
+            android:text="엄선된 호텔"
+            android:textColor="@color/dh_theme_color"
+            android:textSize="28.5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@id/iv_guide_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_ic_guide_curation" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@id/tv_guide_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19.0dip"
+            android:gravity="center"
+            android:text="고객만족도와 할인율을 바탕으로,\n가장 매력적인 호텔만을 제시합니다."
+            android:textSize="17.0dip" />
+    </RelativeLayout>
+</LinearLayout>

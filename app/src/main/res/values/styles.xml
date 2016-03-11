@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.Light.DropDownItem.Spinner</item>
+        <item name="colorAccent">@color/action_bar_bg</item>
+        <item name="android:textColorSecondary">@color/sub_tab_bar_bg</item>
+    </style>
+
+    <style name="TextAppearance.FontPath" parent="@android:style/TextAppearance">
+        <item name="fontPath">fonts/nanumgothic.ttf</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="@android:style/Widget.TextView.SpinnerItem" />
+
+    <style name="Widget.Sherlock.Light.DropDownItem.Spinner" parent="@style/Sherlock.__Widget.Holo.DropDownItem" />
+
+    <style name="Sherlock.__Widget.Holo.DropDownItem" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.DropDownItem</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+    </style>
+
+    <style name="TextAppearance.Sherlock.Widget.DropDownItem" parent="@style/Widget">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textColorPrimaryDisableOnly</item>
+    </style>
+
+    <style name="Widget" />
+    <style name="Widget.Sherlock.TextView.SpinnerItem" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.TextView.SpinnerItem</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+    </style>
+
+    <style name="TextAppearance.Sherlock.Widget.TextView.SpinnerItem" parent="@style/Widget">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="PopMenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/main_translatey100to0</item>
+        <item name="android:windowExitAnimation">@anim/main_translatey0to100</item>
+    </style>
+
+    <style name="bottom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out</item>
+    </style>
+
+    <style name="line_horizontal">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="my_Calendar_button">
+        <item name="android:layout_height">@dimen/my_calendar_button_size</item>
+        <item name="android:layout_width">@dimen/my_calendar_button_size</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="my_Calendar_month">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="my_Calendar_week_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+</resources>
